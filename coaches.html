@@ -693,7 +693,7 @@ function sendMsg() {
   // Build WhatsApp message
   var typeLabel = selectedMsgType==="alert"?"⚠️ Alerta":selectedMsgType==="event"?"📅 Evento":"ℹ️ Info";
   var waText = "*" + typeLabel + " · " + escH(g.n||"") + "*\n\n" + txt.trim() + "\n\n_Coach " + currentCoach.name + " · Club Borregos Santa Anita_";
-  var waUrl  = "https://wa.me/?text=" + encodeURIComponent(waText);
+  var waUrl  = "https://wa.me/5654324415?text=" + encodeURIComponent(waText);
 
   // Show confirmation + WhatsApp button
   var ok = document.getElementById("msg-ok");
