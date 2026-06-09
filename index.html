@@ -7,13 +7,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Plus Jakarta Sans',sans-serif;background:#F0F4F8;color:#0F172A;min-height:100vh}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#F0F4F8;color:#0F172A;min-height:100vh;width:100%;overflow-x:hidden}
 button{font-family:inherit;cursor:pointer}
 input,select{font-family:inherit;box-sizing:border-box}
 #login{min-height:100vh;background:linear-gradient(135deg,#0A2240,#1A4578);display:flex;align-items:center;justify-content:center;padding:20px}
 #login.hide{display:none}
-#app{display:none;min-height:100vh}
-#app.show{display:flex}
+#app{display:none;min-height:100vh;width:100%;}
+#app.show{display:flex;width:100%;}
 .lcard{background:#fff;border-radius:18px;padding:32px 28px;width:100%;max-width:400px;box-shadow:0 28px 72px rgba(0,0,0,.3)}
 .llogo{text-align:center;margin-bottom:22px}
 .llogo img{height:54px;object-fit:contain}
@@ -48,12 +48,12 @@ input,select{font-family:inherit;box-sizing:border-box}
 .lout{width:100%;padding:8px;background:none;border:1px solid rgba(255,255,255,.15);border-radius:8px;font-size:12px;font-weight:600;color:rgba(255,255,255,.5)}
 .lout:hover{background:rgba(255,255,255,.06)}
 /* Main */
-.main{margin-left:226px;min-height:100vh;display:flex;flex-direction:column;transition:margin .2s}
+.main{margin-left:226px;min-height:100vh;display:flex;flex-direction:column;transition:margin .2s;flex:1;min-width:0;overflow-x:hidden}
 .main.full{margin-left:0}
-.topbar{height:54px;background:#fff;border-bottom:1px solid #E2E8F0;display:flex;align-items:center;padding:0 22px;gap:12px;position:sticky;top:0;z-index:50}
+.topbar{height:54px;background:#fff;border-bottom:1px solid #E2E8F0;display:flex;align-items:center;padding:0 22px;gap:12px;position:sticky;top:0;z-index:50;width:100%}
 .topbar-title{font-size:15px;font-weight:700;color:#1E293B;flex:1}
 .tbadge{padding:4px 11px;background:#FDF6E3;border:1px solid #F0D080;border-radius:6px;font-size:11px;font-weight:700;color:#92400E}
-.page{padding:22px 24px 60px;max-width:1180px;width:100%}
+.page{padding:22px 24px 60px;width:100%;}
 .ph h2{font-size:22px;font-weight:900;letter-spacing:-.3px;margin-bottom:3px}
 .ph p{font-size:13px;color:#64748B}
 /* KPIs */
